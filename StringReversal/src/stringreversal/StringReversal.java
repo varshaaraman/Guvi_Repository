@@ -6,6 +6,7 @@
 package stringreversal;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -19,8 +20,10 @@ public class StringReversal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         String originalString="Testclass",reversedString="";
+         String originalString="",reversedString="";
         //char[] tempOriginal=originalString.toCharArray();
+        Scanner input=new Scanner(System.in);
+        originalString=input.next();
         
 
         
@@ -28,7 +31,11 @@ public class StringReversal {
    System.out.println(ReverseString(originalString));
     }
     
-    
+  /**
+   * 
+   * @param InputString the string to be reversed
+   * @return the reversed string
+   */  
 public static String  ReverseString(String InputString) { 
     ArrayList<Character> tempList = new ArrayList<>();
     StringBuilder builderString = new StringBuilder();
