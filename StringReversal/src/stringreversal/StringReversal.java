@@ -21,7 +21,6 @@ public class StringReversal {
     public static void main(String[] args) {
         // TODO code application logic here
          String originalString="",reversedString="";
-        //char[] tempOriginal=originalString.toCharArray();
         Scanner input=new Scanner(System.in);
         originalString=input.next();
         
